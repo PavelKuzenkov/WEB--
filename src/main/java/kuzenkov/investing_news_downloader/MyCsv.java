@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 
 public class MyCsv {
 
+    //Названия нужных новостей/индексов
     private static final String GDP = "GDP \\(QoQ\\)";
     private static final String CURRENT_ACCOUNT = "Current Account.*";
     private static final String TRADE_BALANCE = "Trade Balance.*";

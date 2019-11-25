@@ -86,6 +86,8 @@ public class MyCsv {
           File resultFile = new File("usa-2010-01-01-2019-01-07-result.csv");
           File resultFileWithNumbers = new File("usa-2010-01-01-2019-01-07-resultWithNumbers.csv");
           List<String[]> result = new ArrayList<>();
+
+          //Читаем CSV с новостями
           try (FileReader input = new FileReader(file);
               CSVReader reader = new CSVReader(input, ';')) {
               result = reader.readAll();
@@ -94,6 +96,7 @@ public class MyCsv {
               e.printStackTrace();
           }
 
+          //Отбираем нужные новости
           try (FileWriter outputfile = new FileWriter(resultFile);
                CSVWriter writer = new CSVWriter(outputfile, ';')) {
 

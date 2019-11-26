@@ -80,8 +80,6 @@ public class MyCsv {
     private static final Pattern NEWS_PATTERN = Pattern.compile(NEWS_REGEXP);
 
     public static void main(String[] args) {
-        // first create file object for file placed at location
-        // specified by filepath
         File file = new File("usa-2010-01-01-2019-01-07.csv");
         File resultFile = new File("usa-2010-01-01-2019-01-07-result.csv");
         File resultFileWithNumbers = new File("usa-2010-01-01-2019-01-07-resultWithNumbers.csv");
@@ -100,7 +98,6 @@ public class MyCsv {
         try (FileWriter outputfile = new FileWriter(resultFile);
              CSVWriter writer = new CSVWriter(outputfile, ';')) {
 
-            // adding header to csv
             String[] header = result.get(0);
             writer.writeNext(header);
             List<String[]> removeList = new ArrayList<>();

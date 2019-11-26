@@ -124,130 +124,156 @@ public class MyCsv {
                 String resultString = string[3];
                 string[3] = string[3].replaceAll(GDP, "1");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(CURRENT_ACCOUNT, "2");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Down " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(TRADE_BALANCE, "3");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Down " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(FEDERAL_BUDGET, "4");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Down " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(UNEMPLOYTMENT_RATE, "5");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(NONFARM_PAYROLLS, "6");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(PERSONAL_INCOME, "7");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(PERSONAL_SPENDING, "8");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(NONFARM_PRODUCTIVITY, "9");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(JOBLESS_CLAIMS, "10");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Down " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(CPI, "11");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Down " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(PPI, "12");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Down " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(BUILDING_PERMITS, "13");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(HOUSING_STARTS, "14");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(NEW_HOME_SALES, "15");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(CONSTRUCTION_SPENDING, "16");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(EXISTING_HOME_SALES, "17");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(CORE_RETAIL_SALES, "18");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(RETAIL_SALES, "19");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(DURABLE_GOODS_ORDERS, "20");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(INDUSTRIAl_PRODUCTION, "21");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(CAPACITY_UTILIZATION, "22");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(FACTORY_ORDERS, "23");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(PMI, "24");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(CONSUMER_CONFIDENCE, "25");
                 if (!resultString.equals(string[3])) {
+                    string[2] = "Up " + string[2];
                     writer.writeNext(string);
                     continue;
                 }
                 string[3] = string[3].replaceAll(MICHIGAN_CONSUMER_SENTIMENT, "26");
+                string[2] = "Up " + string[2];
                 writer.writeNext(string);
             }
         } catch (IOException e) {

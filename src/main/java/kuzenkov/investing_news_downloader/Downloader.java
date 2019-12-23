@@ -74,6 +74,9 @@ public class Downloader {
             System.out.println(connection.getResponseMessage());
             System.out.println(connection.getHeaderFields());
 
+//            String s = connection.getContentType();
+//            Object o = connection.getContent();
+
             StringBuilder content;
 
             try (BufferedReader br = new BufferedReader(

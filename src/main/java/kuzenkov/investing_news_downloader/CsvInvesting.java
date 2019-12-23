@@ -7,13 +7,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class MyCsv {
+public class CsvInvesting {
 
     //Названия нужных новостей/индексов
     private static final String GDP = "GDP \\(QoQ\\)";

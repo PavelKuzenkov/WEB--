@@ -21,6 +21,7 @@ public class AddressesDownloader {
     public static void main(String[] args) {
         prepare();
         for (int i = 1; i < reqList.size(); i++) {
+            System.out.println("Запрос " + i + " из " + reqList.size());
             request(reqList.get(i), true);
             String responseString = getResponseString();
             System.out.println(responseString);
@@ -117,17 +118,11 @@ public class AddressesDownloader {
         final StringBuilder result = new StringBuilder();
         result.append("{");
         params.forEach((name, value) -> {
-//            try {
                 result.append(" \"");
-//                result.append(URLEncoder.encode(name, "UTF-8"));
                 result.append(name);
                 result.append("\": \"");
-//                result.append(URLEncoder.encode(value, "UTF-8"));
                 result.append(value);
                 result.append("\",");
-//            } catch (final UnsupportedEncodingException e) {
-//                e.printStackTrace();
-//            }
         });
         result.deleteCharAt(result.length() - 1);
         if (params.containsKey("count")) {
@@ -137,9 +132,6 @@ public class AddressesDownloader {
         result.append(" }").append(System.lineSeparator());
         final String resultString = result.toString();
         System.out.println(resultString);
-//        return !resultString.isEmpty()
-//                ? resultString.substring(0, resultString.length() - 1)
-//                : resultString;
         return resultString;
     }
 
